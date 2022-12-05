@@ -47,25 +47,28 @@ class BishopBlackTest {
     @Test
     void wayC1G5() {
         BishopBlack firstBishop = new BishopBlack(Cell.C1);
-        assertThat(firstBishop.way(Cell.G5)).isEqualTo(new Cell[] {Cell.D2, Cell.E3, Cell.F4, Cell.G5});
+        assertThat(firstBishop.way(Cell.G5)).isEqualTo(new Cell[]
+                {Cell.D2, Cell.E3, Cell.F4, Cell.G5});
     }
 
     @Test
     void wayG5C1() {
         BishopBlack firstBishop = new BishopBlack(Cell.G5);
-        assertThat(firstBishop.way(Cell.C1)).isEqualTo(new Cell[] {Cell.F4, Cell.E3, Cell.D2, Cell.C1});
+        assertThat(firstBishop.way(Cell.C1)).isEqualTo(new Cell[]
+                {Cell.F4, Cell.E3, Cell.D2, Cell.C1});
     }
 
     @Test
     void wayG5F4() {
         BishopBlack firstBishop = new BishopBlack(Cell.G5);
-        assertThat(firstBishop.way(Cell.F4)).isEqualTo(new Cell[] {Cell.F4});
+        assertThat(firstBishop.way(Cell.F4)).isEqualTo(new Cell[]{Cell.F4});
     }
 
     @Test
     void wayH8A1() {
         BishopBlack firstBishop = new BishopBlack(Cell.H8);
-        assertThat(firstBishop.way(Cell.A1)).isEqualTo(new Cell[] {Cell.G7, Cell.F6, Cell.E5, Cell.D4, Cell.C3, Cell.B2, Cell.A1});
+        assertThat(firstBishop.way(Cell.A1)).isEqualTo(new Cell[]
+                {Cell.G7, Cell.F6, Cell.E5, Cell.D4, Cell.C3, Cell.B2, Cell.A1});
     }
 
     @Test
